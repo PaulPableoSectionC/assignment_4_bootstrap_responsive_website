@@ -1,0 +1,43 @@
+@keyframes pulse {
+  50% {
+    box-shadow: 0 0 0 0.7rem hsla(0, 0%, 100%, 0.75);
+  }
+  100% {
+    box-shadow: 0 0 0 0.7rem hsla(0, 0%, 100%, 0);
+  }
+}
+
+
+
+body {
+    font-family: "Poppins", sans-serif;
+ }
+
+.background {
+  object-fit: cover; /* or contain, depending on your preference */
+  background-image: radial-gradient(rgba(255, 255, 255, 0), #f3f3f3),
+    url("./assets/danny-howe-bn-D2bCvpik-unsplash\ \(2\).jpg");
+  background-size: cover; /* Adjust the size to cover the entire element */
+  background-position: center; /* Center the background image */
+  .logo {
+    animation-delay: 2.5s;
+    animation: pulse 1.5s ease-out infinite;
+    max-width: 300px;
+    height: auto;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.125);
+    text-transform: uppercase;
+  }
+}
+
+.services,
+.about {
+  background-color: #5ce1e6;
+}
+
+.services-background {
+  object-fit: cover; /* or contain, depending on your preference */
+  background-image: radial-gradient(rgba(255, 255, 255, 0), #f3f3f3),
+    url("./assets/tony-pham-FUmDe-Bx1LA-unsplash.jpg");
+  background-size: cover; /* Adjust the size to cover the entire element */
+  background-position: center; /* Center the background image */
+}
